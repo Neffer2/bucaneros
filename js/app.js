@@ -82,6 +82,10 @@ class MainScene extends Phaser.Scene {
 
             this.add.image((mContext.game.config.width/2), (mContext.game.config.height/2), 'marcador').setScale(.8);           
             this.add.text((mContext.game.config.width/2) -20, (mContext.game.config.height/2) - 43, score, { font: '128px Courier', fill: '#ff0000' });            
+
+            setTimeout(() => {
+                location.reload();
+            }, 8000);
         }, 30000);
     }
 
